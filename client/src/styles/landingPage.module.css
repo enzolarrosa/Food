@@ -1,0 +1,120 @@
+.backG {
+    background-image: url('../img/backG.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: 700; 
+}
+
+a{
+    text-decoration: none;   
+}
+
+.tit {
+    font-size: 2.5rem;
+    z-index: 10;
+    animation-name: mover;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+}
+
+.titl {
+    font-size: 2.5rem;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.507);
+    animation-name: mover;
+    animation-duration: 1.71s;
+    animation-iteration-count: infinite;
+}
+
+@media only screen and (max-width: 559px) {
+    .tit {
+        font-size: 2rem;
+
+    }
+    .titl {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .tit {
+        font-size: 1.4rem;
+
+    }
+    .titl {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+@keyframes mover {
+    5% {
+        transform: translateY(-10px);
+    }
+    10% {
+        transform: translateY(-30px);
+    }
+    15% {
+        transform: translateY(-50px);
+    }
+    20% {
+        transform: translateY(-70px);
+    }
+    25% {
+        transform: translateY(-90px);
+    }
+    30% {
+        transform: translateY(-110px);
+    }
+    35% {
+        transform: translateY(-130px);
+    }
+    40% {
+        transform: translateY(-150px);
+    }
+    45% {
+        transform: translateY(-160px);
+    }
+    50% {
+        transform: translateY(-140px);
+    }
+    55% {
+        transform: translateY(-120px);
+    }
+    60% {
+        transform: translateY(-100px);
+    }
+    65% {
+        transform: translateY(-70px);
+    }
+    70% {
+        transform: translateY(-40px);
+    }
+    75% {
+        transform: translateY(-10px);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    85% {
+        transform: translateY(40px);
+    }
+    90% {
+        transform: translateY(60px);
+    }
+    95% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(20px);
+    }
+}

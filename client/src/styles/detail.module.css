@@ -1,0 +1,410 @@
+
+
+
+.one {
+    width: 100%;
+    height: 10%;
+}
+
+.two{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.img {
+    width: 30%;
+    border-radius: 10px;
+    height: 30%;
+    box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    margin-right: 50px;
+}
+
+.diets{
+    width: 20%;
+    border-radius: 10px;
+    padding: 5px    ;
+    background-color: var(--secundary);
+    box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+}
+
+.diets h2 {
+    font-family: 'Indie Flower', cursive;
+    color: rgb(20, 21, 32);
+    font-size: 1.8em;
+}
+
+.diets p {
+    margin-top: 7%;
+    color:  rgb(20, 21, 32);
+    font-size: 1rem;
+}
+
+.three {
+    
+    width: 30%;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    margin-left: 35%;
+    margin-top: 3%;
+
+}
+
+.three p {
+    width: 100%;
+    height: 70%;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    border-radius: 6px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    background-color: var(--secundary);
+
+}
+
+.text {
+    background-color: var(--secundary);
+    border-radius: 20px;
+    height: auto;
+    padding: 10px;
+    width: 40%;
+    box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+}
+
+.textt {
+    background-color: var(--secundary);
+    border-radius: 20px;
+    height: auto;
+    width: 40%;
+    padding: 20px;
+    box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    
+}
+
+.textt h3 {
+    margin-bottom: 20px;
+    font-size: 2.3em;
+    color: var(--primary);
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.textt p {
+    font-size: 0.9em;
+    color: rgb(20, 21, 32);
+}
+
+.text h3 {
+    margin-bottom: 20px;
+    font-size: 2.3em;
+    color: var(--primary);
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.text p {
+    font-size: 0.9em;
+    color: rgb(20, 21, 32);
+}
+
+.four {
+    margin-left: 10%;
+    margin-top: 3%;
+    padding-bottom: 10px;
+    width: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.btn {
+    cursor: pointer;
+    position: fixed;
+    width: 10%;
+    height: 5%;
+    border: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 700;
+    color: white;
+    background-color: rgb(160, 43, 43);
+    box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    -webkit-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    -moz-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    top: 5;
+    right: 0;
+}
+
+.one h1{
+    color: white;
+    font-size: 2.5em;
+    font-family: 'Indie Flower', cursive;
+}
+
+.cont {
+    background-image: url('https://i.pinimg.com/originals/22/df/03/22df0390c03d80cab2be412dcbd93b75.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    align-items: center;
+}
+
+
+@media only screen and (max-width: 783px) {
+    .one h1{
+        color: white;
+        font-size: 2em;
+        font-family: 'Indie Flower', cursive;
+    }
+    .img {
+        width: 40%;
+        border-radius: 10px;
+        height: 30%;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        margin-right: 50px;
+    }
+    
+    .diets{
+        width: 30%;
+        border-radius: 10px;
+        padding: 5px    ;
+        background-color: var(--secundary);
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    }
+    
+}
+
+@media only screen and (max-width: 641px) {
+    
+    .four {
+        margin-left: 7%;
+        margin-top: 3%;
+        padding-bottom: 10px;
+        width: 90%;
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+    .text {
+        background-color: var(--secundary);
+        border-radius: 20px;
+        height: auto;
+        padding: 10px;
+        width: 43%;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        -webkit-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        -moz-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    }
+    
+    .textt {
+        background-color: var(--secundary);
+        border-radius: 20px;
+        height: auto;
+        width: 43%;
+        padding: 20px;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        -webkit-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        -moz-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        
+    }
+}
+
+@media only screen and (max-width: 533px) { 
+    .btn{
+        top: 0;
+        right: 0;
+    }
+    .three {
+    
+        width: 40%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        margin-left: 30%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .three p {
+        width: 100%;
+        height: 70%;
+        font-size: 1.2rem;
+        align-items: center;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        background-color: var(--secundary);
+    
+    }
+    .img {
+        width: 40%;
+        border-radius: 10px;
+        height: 40%;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        margin-right: 50px;
+    }
+    
+    .diets{
+        width: 35%;
+        border-radius: 10px;
+        padding: 5px    ;
+        background-color: var(--secundary);
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    }
+    .text {
+        background-color: var(--secundary);
+        border-radius: 20px;
+        height: auto;
+        padding: 0px 20px 20px 20px;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    
+    .textt {
+        background-color: var(--secundary);
+        border-radius: 20px;
+        margin-bottom: 5%;
+        height: auto;
+        width: 60%;
+        padding: 0px 20px 20px 20px;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        -webkit-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        -moz-box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        
+    }
+    
+}
+
+@media only screen and (max-width: 465px) {
+    .two{
+        margin-top: 3%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    
+    .img {
+        width: 55%;
+        border-radius: 10px;
+        height: 30%;
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+        margin-bottom: 4%;
+        margin-left: 12%;
+    }
+    
+    .diets{
+        width: 50%;
+        border-radius: 10px;
+        padding: 5px    ;
+        background-color: var(--secundary);
+        box-shadow: 11px 11px 12px 1px rgba(0,0,0,0.58);
+    }
+
+    .esperando {
+        width: 200px;
+        height: 200px;
+    }
+
+ }
+
+ @media only screen and (max-width: 411px) {
+    .btn{
+        top: 0;
+        right: 0;
+        width: 16%;
+    }
+    .img {
+        width: 80%;
+        margin-bottom: 4%;
+        margin-left: 12%;
+    }
+    
+    .diets{
+        width: 80%;
+        padding: 5px    ;
+    }
+    .three {
+    
+        width: 60%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        margin-left: 22%;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+    .text {
+        width: 80%;
+        margin-bottom: 5%;
+    }
+    
+    .textt {
+        width: 80%;
+    }
+    .one h1{
+        color: white;
+        font-size: 1.7em;
+        font-family: 'Indie Flower', cursive;
+    }
+
+ }
+
+ @media only screen and (max-width: 361px) {   
+    .btn{
+        top: 0;
+        right: 0;
+        width: 18%;
+    } 
+    .img {
+        width: 75%;
+        height: 170px;
+        margin-bottom: 4%;
+        margin-left: 12%;
+    }
+    
+    .diets{
+        width: 75%;
+        padding: 5px    ;
+    }
+    .three {
+    
+        width: 60%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        margin-left: 22%;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+    .text {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    
+    .textt {
+        width: 90%;
+    }
+    .one h1{
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Indie Flower', cursive;
+    }
+
+ }
