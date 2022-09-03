@@ -95,7 +95,7 @@ export default function Home(){
             allRecipes={allRecipes.length}
             paginado={paginado} 
             />
-             { currentRecipe &&
+             { currentRecipe.length &&
             <Footer/>}
         </div>
     )

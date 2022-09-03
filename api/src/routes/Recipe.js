@@ -10,7 +10,7 @@ router.post("/", async (req, res) => {
         name,
         summary,
         healthScore,
-        image,
+        image,  
         instructions,
       });
       diets.map(async (e) => {
