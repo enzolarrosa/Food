@@ -52,7 +52,7 @@ export default function Detail(){
             </div>
         </div>
         </div>}
-        { MyRecipe.length &&
+        { MyRecipe &&
         <Footer/>
         }
         </>

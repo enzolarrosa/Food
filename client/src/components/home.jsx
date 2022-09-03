@@ -72,7 +72,7 @@ export default function Home(){
                 <select onChange={(e) => handleFilt(e)} >
                 <option value='all'>Filter by diet:</option>
                 {allDiets?.map(e => (
-                        <option key={e.name} value={e.name}>{e.name}</option>
+                        <option key={e.id} value={e.name}>{e.name}</option>
                 ))}
 
                 </select>
@@ -95,7 +95,7 @@ export default function Home(){
             allRecipes={allRecipes.length}
             paginado={paginado} 
             />
-             { currentRecipe.length &&
+             { currentRecipe &&
             <Footer/>}
         </div>
     )
