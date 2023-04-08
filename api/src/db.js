@@ -30,7 +30,7 @@ let sequelize=
     ssl: true,
    })
    : new Sequelize(
-    DB_DEPLOY,
+    `postgresql://postgres:${DB_PASSWORD}@containers-us-west-171.railway.app:7317/railway`,
     {logging: false , native: false}
    );
 
