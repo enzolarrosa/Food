@@ -4,7 +4,7 @@ const fs = require('fs');
 const path = require('path');
 const {
   DB_USER, DB_PASSWORD, DB_HOST, DB_NAME
-} = process.env;
+,DB_DEPLOY} = process.env;
 
 let sequelize=
   process.env.NODE_ENV === 'production'
@@ -30,7 +30,7 @@ let sequelize=
     ssl: true,
    })
    : new Sequelize(
-    `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/food`,
+    DB_DEPLOY,
     {logging: false , native: false}
    );
 
