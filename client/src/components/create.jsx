@@ -89,29 +89,41 @@ return (
         <div className={c.divForm}>
         <form className={c.form} onSubmit={(e) => handleSubmit(e)}>
             <h1 className={c.title}>Creating...</h1>
-        <div className={c.divInput}>
+        <div className={c.contInput}>
+            <div className={c.divInput} >
             <label>Name:</label>
             <input className={c.input} onChange={(e) => handleInput(e)} type="text" value={input.name} name="name"/>
             {err.name && <h5 className={c.error}>Name is requerided</h5>}
+            </div>
+            <div className={c.divInput} >
             <label>summary:</label>
             <textarea onChange={(e) => handleInput(e)} type="text" value={input.summary} name="summary"/>
             {err.summary && <h5 className={c.error}>Summary is requerided</h5>}
+            </div>
+            <div className={c.divInput} >
             <label>healthScore:</label>
             <input className={c.input} onChange={(e) => handleInput(e)} type="number" min="1" max="100" value={input.healthScore} name="healthScore"/>
             {err.healthScore && <h5 className={c.error}>HealthScore is requerided</h5>}
+            </div>
+            <div className={c.divInput} >
             <label>image:</label>
             <input className={c.input} onChange={(e) => handleInput(e)} type="text" value={input.image} name="image"/>
+            </div>
+            <div className={c.divInput} >
             <label>Diets:</label>
             <select className={c.select} onChange={(e) => handleDiets(e)}>
                 {allDiets?.map(e => (<option key={e.name} value={e.name}>{e.name}</option>))}
             </select>
-                
+            </div>
+            <div className={c.divInput} >
             <label>instructions:</label>
             <textarea onChange={(e) => handleInput(e)} type="text" value={input.instructions} name="instructions"/>
+            </div>
         </div>
-
+        <div className={c.divBtn} >
         <Link to='/home'><button className={c.button}>Back</button></Link>
         <button className={c.button} type="submit" >Create</button>
+        </div>
         </form>
         <div className={c.dietsCont}>
         {input.diets.map( el => 

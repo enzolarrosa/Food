@@ -5,44 +5,56 @@
     margin: 0%;
 }
 
-.divInput{
-    margin-top: 10%;
+.contInput{
     display: flex;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
 }
 
+form {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.divInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+}
+
+.divBtn {
+    width: 100%;
+    height: 5rem;
+}
+
+.divInput input, .divInput select, .divInput textarea {
+    width: 100%;
+    height: 25%;
+    border-radius: 4px;
+    text-align: center;
+    outline: none;
+    border: none;
+}
+
+.divInput textarea{
+    min-width: 100%;
+    max-width: 100%;
+    height: 55%;
+}
+
 .title {
-    font-size: 3.4rem;
+    font-size: 2rem;
     font-family: 'Indie Flower', cursive;
     color: white;
 }
 
-textarea {
-    outline: none;
-    border-radius: 5px;
-    padding: 2px;
-}
-
-.input {
-    padding-left: 10px;
-    border-radius: 5px;
-    outline: none;
-    width: 92%;
-    height: 40px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(23, 25, 53);
-}
-
-textarea {
-    margin-top: 5%;
-}
-
 label{
     color: white;
-    margin-bottom: 3%;
-    margin-top: 3%;
     font-family: 'Indie Flower', cursive;
     font-size: 1.5em;
 }
@@ -55,7 +67,7 @@ label{
 
 .divForm {
     width: 80%;
-    height: 100%;
+    height: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -83,18 +95,14 @@ label{
 }
 
 .button{
-    margin-top: 10%;
     border-radius: 5px;
     color:#24274d;
     background-color: rgb(184, 184, 184);
     width: 50%;
     font-size: 110%;
-    height: 7%;
+    height: 46%;
     outline: none;
     transition: 1s;
-    /* animation-name: button;
-    animation-duration: 3s;
-    animation-iteration-count: infinite; */
 }
 
 .button:hover {
@@ -104,66 +112,12 @@ label{
 }
 
 .contenedor {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-/* 
-@keyframes button {
-    5% {
-        border-top-color: blue;
-        border-bottom-color: rgb(251, 255, 0);
-        border-left-color: rgb(255, 115, 0);
-        border-right-color: rgb(255, 0, 0);
-    }
-    15% {
-        border-top-color: rgb(251, 255, 0);
-        border-bottom-color: blue;
-        border-left-color: rgb(255, 115, 0);
-        border-right-color: rgb(255, 0, 0);
-    }
-    30% {
-        border-top-color: blue;
-        border-bottom-color: rgb(255, 0, 0);
-        border-left-color: rgb(255, 166, 0);
-        border-right-color: rgb(251, 255, 0);
-    }
-    50% {
-        border-top-color: rgb(255, 0, 0);
-        border-bottom-color: rgb(251, 255, 0);
-        border-left-color: rgb(255, 115, 0);
-        border-right-color: blue;
-    }
-    65% {
-        border-top-color: rgb(9, 255, 0);
-        border-bottom-color: rgb(0, 26, 255);
-        border-left-color: rgb(255, 0, 0);
-        border-right-color: rgb(255, 251, 0);
-    }
-    80% {
-        border-top-color: blue;
-        border-bottom-color: rgb(251, 255, 0);
-        border-left-color: rgb(255, 115, 0);
-        border-right-color: rgb(255, 0, 0);
-    }
-    90% {
-        border-top-color: blue;
-        border-bottom-color: rgb(251, 255, 0);
-        border-left-color: rgb(255, 115, 0);
-        border-right-color: rgb(255, 0, 0);
-    }
-    100% {
-        border-top-color: blue;
-        border-bottom-color: rgb(251, 255, 0);
-        border-left-color: rgb(255, 115, 0);
-        border-right-color: rgb(255, 0, 0);
-    }
-
-
-
-} */
 
 
