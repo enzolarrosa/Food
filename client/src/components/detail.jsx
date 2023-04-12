@@ -20,7 +20,11 @@ export default function Detail(){
 
     return (
         <>
-        {MyRecipe.length === 0? <img className={d.esperando} alt="esperando" src="https://img.wattpad.com/9b67f052e1e32a97f5624536489a57f043c3e127/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f42734d687075417576506271413d3d2d313230373133323936392e3136646636613236366538323762626335393830333232313132332e676966" width="300px" height="300px"/> :
+        {MyRecipe.length === 0?
+            <div className={d.divLoading}>
+            <img className={d.imgLoading} alt="esperando" src="https://img.wattpad.com/9b67f052e1e32a97f5624536489a57f043c3e127/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f4f42734d687075417576506271413d3d2d313230373133323936392e3136646636613236366538323762626335393830333232313132332e676966" width="300px" height="300px"/>
+            </div>
+            :
         <div className={d.cont}>
             <Link to='/home'>
          <button className={d.btn}>Back</button>
@@ -52,8 +56,8 @@ export default function Detail(){
             </div>
         </div>
         </div>}
-        { MyRecipe &&
-        <Footer/>
+        { MyRecipe.length !== 0? 
+        <Footer/> : ''
         }
         </>
     )
