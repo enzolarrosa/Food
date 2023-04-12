@@ -56,9 +56,6 @@ export default function Detail(){
             </div>
         </div>
         </div>}
-        { MyRecipe.length !== 0? 
-        <Footer/> : ''
-        }
         </>
     )
 }

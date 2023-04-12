@@ -5,6 +5,7 @@ import Nav from './components/nav'
 import Home from './components/home'
 import Create from './components/create'
 import Detail from './components/detail';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -16,12 +17,14 @@ function App() {
         <Route path='/home'>
          <Nav />
          <Home/>
+         <Footer/>
         </Route>
         <Route path='/create'>
          <Create/>
         </Route>
         <Route path='/detail/:id'>
          <Detail/>
+         <Footer/>
         </Route>
       </Switch>
     </div>
