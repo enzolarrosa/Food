@@ -75,6 +75,8 @@
     border: 0px;
 }
 
+
+
 .busOne{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -146,7 +148,7 @@
        font-size: 0.78rem;
 
     } */
-    
+
     .btn{
         width: 70%;
         font-size: .6rem;
