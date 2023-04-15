@@ -125,7 +125,7 @@ label{
         width: 60%;
     }
     .divInput input, .divInput select, .divInput textarea {
-        height: 25%;
+        height: 35%;
     }
     .divInput textarea{
         height: 75%;
