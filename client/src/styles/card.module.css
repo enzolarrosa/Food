@@ -51,6 +51,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    margin-right: 8%;
 }
 
 .li button {
@@ -101,9 +102,19 @@
 
 }
 
+@media only screen and (max-width: 600px) {
+    .card{
+        width:40%;
+        height: 350px;
+    }
+}
+
 @media only screen and (max-width: 575px) {
     .nav{
         width: 90%;
+    }
+    .li button {
+        margin-left: 0em;
     }
     .card{
         width: 44%;
@@ -116,7 +127,7 @@
         width: 90%;
     }
     .li button {
-        margin-left: 0.8em;
+        margin-left: 0.5em;
     }
     .card{
         width: 44%;
@@ -124,7 +135,7 @@
 
 }
 
-@media only screen and (max-width: 495px) {
+@media only screen and (max-width: 500px) {
     .nav{
         width: 94%;
     }
@@ -133,7 +144,7 @@
     }
     .card{
         width: 65%;
-        height: 345px;
+        height: 350px;
     }
 
 }
@@ -144,11 +155,11 @@
     }
     .card{
         width: 65%;
-        height: 345px;
+        height: 350px;
     }
     .li button {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
 }
@@ -158,12 +169,12 @@
         width: 90%;
     }
     .card{
-        width: 65%;
-        height: 320px;
+        width: 70%;
+        height: 350px;
     }
     .li button {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         font-size: 0.7em;
         margin-left: 0.7em;
     }
@@ -182,8 +193,8 @@
         height: 320px;
     }
     .li button {
-        width: 17px;
-        height: 17px;
+        width: 13px;
+        height: 13px;
         font-size: 0.7em;
         margin-left: 0.7em;
     }

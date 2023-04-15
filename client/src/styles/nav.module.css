@@ -99,14 +99,37 @@
     background-color: white;
 }
 
+@media only screen and (max-width: 625px) {
+    .bus{
+        width:25%;
+        height: 50%;
+    }
+    .busOne{
+        height: 50%;
+    }
+}
+
 @media only screen and (max-width: 597px) {
     .bus{
-       width: 30%;
+        width: 30%;
     }
     /* .busOne{
-       width: 10%;
+        width: 10%;
     } */
+    
+}
 
+@media only screen and (max-width: 533px) {
+    .bus{
+        width:25%;
+        height: 50%;
+        font-size: .9rem;
+    }
+    .busOne{
+        height: 50%;
+        width: 6%;
+        font-size: 1.2rem;
+    }
 }
 
 @media only screen and (max-width: 467px) {

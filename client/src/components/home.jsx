@@ -4,7 +4,6 @@ import {useSelector,useDispatch} from 'react-redux'
 import Card from './card'
 import h from '../styles/home.module.css'
 import Paginado from "./Paginado.jsx";
-import Footer from './footer.jsx'
 
 export default function Home(){
 

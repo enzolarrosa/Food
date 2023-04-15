@@ -3,7 +3,6 @@ import {useDispatch, useSelector} from 'react-redux'
 import { Link, useParams } from "react-router-dom";
 import { getDetail} from '../actions/index'
 import d from '../styles/detail.module.css'
-import Footer from './footer'
 
 
 export default function Detail(){
