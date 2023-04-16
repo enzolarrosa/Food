@@ -68,7 +68,7 @@ export default function Create() {
     }
     
     const handleDiets = (e) => {
-        if(!input.diets.includes(e.target.value)){
+        if(!input.diets.includes(e.target.value) && input.diets.length < 4){
             setInput({
                 ...input,
                 diets: [...input.diets,e.target.value],
