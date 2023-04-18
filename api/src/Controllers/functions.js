@@ -5,13 +5,8 @@ const { default: axios} = require("axios");
 const { Op } = require("sequelize");
 
 
-const dbQuery= async (name) => {
+const dbQuery= async () => {
     let recipesFinded = await Recipe.findAll({
-      where: {
-        name: {
-          [Op.substring]: `${name}`,
-        },
-      },
       include: {
         model: Diet,
         through: {
@@ -23,9 +18,9 @@ const dbQuery= async (name) => {
     return recipesFinded
   }
   
-  const apiQuery = async (name) => {
+  const apiQuery = async () => {
     let recipesFinded= await axios.get(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${APYKEY}&number=100&addRecipeInformation=true`);
-    let byName= await recipesFinded.data.results.filter(r => r.title.includes(name));
+    let byName= await recipesFinded.data.results
     if(byName) {
       byName= await byName.map( e => {
         return {

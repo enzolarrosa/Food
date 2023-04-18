@@ -5,21 +5,19 @@ const {dbQuery,apiQuery,allId} = require('../Controllers/functions')
 
 router.get("/", async (req, res) => {
   const { name } = req.query;
-  const db = await dbQuery(name)
-  const api= await apiQuery(name)
+  const db = await dbQuery()
+  const api= await apiQuery()
   const all= await db.concat(api)
-  if (!name) { return res.json(all) }
+  if (!name) { 
+    return res.json(all) }
   else {
-    try {
+    const recipes= all.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
       return res.json(
-        all
-          ? all
+        recipes
+          ? recipes
           : "no hay recetas con ese nombre"
       );
-    } catch (error) {
-       return res.send({ error: error.message });
-    }
-  }
+    } 
 });
 
 router.get("/:id", async (req,res) => {
